@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "Compiling $PYFILE ..."
+python3 -m py_compile $PYFILE
+find ./__pycache__/ -name "$(echo $PYFILE|tr -d '.py')*.pyc" -exec cp '{}' ./$(echo $PYFILE| tr -d '.py').pyc \;
+rm -dr ./__pycache__/
