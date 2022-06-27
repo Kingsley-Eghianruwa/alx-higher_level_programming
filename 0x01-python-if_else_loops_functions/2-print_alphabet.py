@@ -2,6 +2,6 @@
 i = 97
 # beginwhile
 while (i <= 122):
-    print(chr(i), end="")
+    print("{}".format(chr(i)), end="")
     i = i + 1
 # endwhile
