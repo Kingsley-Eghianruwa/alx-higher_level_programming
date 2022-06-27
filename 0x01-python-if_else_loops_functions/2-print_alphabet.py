@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-i = 97
-# beginwhile
-while (i <= 122):
+
+# begin_for
+for i in range(97, 123):
     print("{}".format(chr(i)), end="")
-    i = i + 1
-# endwhile
+# end_for
