@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 # begin_def
 def islower(c):
     var = ord(c)
