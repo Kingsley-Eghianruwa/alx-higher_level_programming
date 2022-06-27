@@ -7,5 +7,5 @@ for i in range(97, 123):
         continue
     else:
         print("{}".format(chr(i)), end="")
-    #end_if
+    # end_if
 # end_for
