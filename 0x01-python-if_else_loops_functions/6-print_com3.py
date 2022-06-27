@@ -8,7 +8,7 @@ for i in range(0, 10):
         if (i != j and i < j):
             print("{}{}".format(i, j), end="")
             # begin_if
-            if (i == 8 and j ==9):
+            if (i == 8 and j == 9):
                 print('\n', end="")
             else:
                 print(", ", end="")
