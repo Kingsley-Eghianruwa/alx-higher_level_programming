@@ -6,7 +6,7 @@ def pow(a, b):
     if (b == 0):
         return 1
     elif (b < 0):
-        r = 1.0 / (a ** abs(b))
+        r = 1 / (a ** abs(b))
         return r
     else:
         r = a ** b
