@@ -13,9 +13,3 @@ for i in range(1, 27):
     char_start = char_start - 1
     char_case = char_case * -1
 # end_for
-
-    
-
-        
-
-        
