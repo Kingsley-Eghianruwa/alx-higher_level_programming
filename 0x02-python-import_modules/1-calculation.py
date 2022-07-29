@@ -5,7 +5,7 @@ if __name__ == "__main__":
     a = 10
     b = 5
     tmp = 0
-    
+
     tmp = cal.add(a, b)
     print("{} + {} = {}".format(a, b, tmp))
     tmp = cal.sub(a, b)
