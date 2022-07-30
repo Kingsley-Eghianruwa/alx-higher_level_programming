@@ -12,5 +12,3 @@ if __name__ == "__main__":
         #  endif
         index = index + 1
     #  endwhile
-
-
