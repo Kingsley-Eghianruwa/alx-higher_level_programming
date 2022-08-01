@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-wr = __import__("sys")
+import importlib as Ilib; wr = Ilib.import_module("sys")
 wr.stdout.write("#pythoniscool" + '\n')
