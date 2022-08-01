@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-from sys import stdout as so; text = "#pythoniscool"; so.write(text + '\n')
+import importlib as libm;writer = libm.import_module("sys");writer.stdout.write("#pythoniscool" + '\n')
