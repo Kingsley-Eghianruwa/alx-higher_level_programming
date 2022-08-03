@@ -1,4 +1,4 @@
-#!/usr/bin/pydoc3
+#!/usr/bin/python3
 
 def print_list_integer(my_list=[]):
     l_max_idx = len(my_list) - 1
