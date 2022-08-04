@@ -11,7 +11,7 @@ def copy_list(my_list, new_list=[]):
     #  endif
 
     while (index <= max_index):
-        new_list[index] = my_list[index]
+        new_list.append(my_list[index])
         index = index + 1
     #  endwhile
 
@@ -29,7 +29,7 @@ def new_in_list(my_list, idx, element):
         max_idx = len(my_list) - 1
     #  endif
 
-    if ((idx < 0) or (idx > max_index)):
+    if ((idx < 0) or (idx > max_idx)):
         return new_list
     #  endif
 
