@@ -6,7 +6,7 @@ def no_c(my_string):
     idx = 0
 
     while (idx <= max_idx):
-        if (my_string[idx] != 'c' and  my_string[idx] != 'C'):
+        if (my_string[idx] != 'c' and my_string[idx] != 'C'):
             char_list.append(my_string[idx])
         #  endif
         # space
