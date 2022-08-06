@@ -7,9 +7,9 @@ def divisible_by_2(my_list=[]):
     #  ###
     while (idx <= max_idx):
         mod = my_list[idx] % 2
-        if (my_list[idx] == 1 or my_list[idx] == 0 or my_list[idx] == -1):
+        if (my_list[idx] == 1 or my_list[idx] == -1):
             new_list.insert(idx, False)
-        elif (mod == 0):
+        elif (mod == 0 or my_list[idx] == 0):
             new_list.insert(idx, True)
         else:
             new_list.insert(idx, False)
