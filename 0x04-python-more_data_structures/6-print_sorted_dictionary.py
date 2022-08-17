@@ -2,7 +2,7 @@
 
 def print_sorted_dictionary(a_dictionary):
     keys_list = sorted(a_dictionary)
-    idx = 0;
+    idx = 0
     #  ###
     while (idx < len(keys_list)):
         print("{}: {}".format(keys_list[idx], a_dictionary[keys_list[idx]]))
