@@ -2,7 +2,7 @@
 
 def update_dictionary(a_dictionary, key, value):
     check = key in a_dictionary
-    if (check == True):
+    if (check is True):
         del a_dictionary[key]
         a_dictionary[key] = value
     else:
