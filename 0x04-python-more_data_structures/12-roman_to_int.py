@@ -6,6 +6,12 @@ def roman_to_int(roman_string):
     cmp_x = 0
     sum_digits = 0
     #  ###
+    if (roman_string is None):
+        return 0
+    #  endif
+    if (type(roman_string) is not  str):
+        return 0
+    #  endif
     while (idx >= 0):
         z = roman_symbols[roman_string[idx]]
         if (z >= cmp_x):
