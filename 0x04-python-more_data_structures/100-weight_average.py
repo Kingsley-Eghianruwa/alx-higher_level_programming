@@ -6,7 +6,7 @@ def weight_average(my_list=[]):
     idx = 0
     result = 0
     #  ###
-    if  (my_list == []):
+    if (my_list == []):
         return 0
     else:
         max_idx = len(my_list) - 1
