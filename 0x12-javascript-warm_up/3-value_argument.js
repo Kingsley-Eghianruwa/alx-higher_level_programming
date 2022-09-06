@@ -5,7 +5,7 @@ const firstArg = argList[2];
 const isFirstArg = typeof (argList[2]);
 
 if (isFirstArg === 'undefined') {
-  console.log('No arguments');
+  console.log('No argument');
 } else {
   console.log(firstArg);
 }
