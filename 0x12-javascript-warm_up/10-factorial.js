@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
 function rfact (idx, result) {
-  if (idx === 1) {
+  if (idx === 1 || idx === 0) {
     return result;
   }
   result = result * idx;
