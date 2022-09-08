@@ -6,7 +6,7 @@ if (numOfArg < 2) {
   console.log(0);
 } else {
   let largesetNum = Number.MIN_SAFE_INTEGER;
-	let secondLargestNum = Number.MIN_SAFE_INTEGER;
+  let secondLargestNum = Number.MIN_SAFE_INTEGER;
   let idx = 0;
   const argArray = process.argv.slice(2);
 
