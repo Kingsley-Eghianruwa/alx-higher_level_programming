@@ -5,11 +5,10 @@ const numOfArg = process.argv.length - 2;
 if (numOfArg < 2) {
   console.log(0);
 } else {
-  let largesetNum = 0;
-  let secondLargestNum = 0;
+  let largesetNum = Number.MIN_SAFE_INTEGER;
+	let secondLargestNum = Number.MIN_SAFE_INTEGER;
   let idx = 0;
   const argArray = process.argv.slice(2);
-  console.log(argArray);
 
   while (idx < argArray.length) {
     if (Number(argArray[idx]) > largesetNum) {
