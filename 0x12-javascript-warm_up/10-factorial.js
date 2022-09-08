@@ -16,7 +16,7 @@ function fact (n) {
   return rfact(idx, result);
 }
 
-const value = Number(process.argv[2]);
+const value = ~~Number(process.argv[2]);
 
 if (isNaN(value)) {
   console.log(1);
