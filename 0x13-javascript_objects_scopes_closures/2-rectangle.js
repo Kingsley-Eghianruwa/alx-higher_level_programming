@@ -1,10 +1,14 @@
 #!/usr/bin/node
 
-module.exports = class Rectangle {
-  constructor (w, h) {
-    if (w > 0 && h > 0) {
-      this.width = w;
-      this.height = h;
-    }
+class Rectangle {
+  consructor () {}
+}
+
+module.exports = function rectangle (w, h) {
+  const obj = new Rectangle();
+  if (w > 0 && h > 0) {
+    obj.width = w;
+    obj.height = h;
   }
+  return obj;
 };
