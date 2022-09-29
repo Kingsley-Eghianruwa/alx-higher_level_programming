@@ -28,7 +28,7 @@ def size_check(size):
 class Square:
     """ this is class creates a square object with size """
 
-    def __init__(self, size = 0):
+    def __init__(self, size=0):
         """class square consructor
 
         size is a private variable
