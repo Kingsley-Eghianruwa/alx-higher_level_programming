@@ -69,9 +69,15 @@ class Square:
         """prints in stdout the square with the character #"""
         i = 0
         j = 0
+        max_iter = None
+        if (self._size > 0):
+            max_iter = self._size - 1
+        else:
+            max_iter = 0
+        #  endif
 
-        while (i <= self._size):
-            while (j < self._size and self._size > 0):
+        while (i <= max_iter):
+            while (j <= max_iter and max_iter != 0):
                 print("#", end="")
                 j = j + 1
             #  endwhile
