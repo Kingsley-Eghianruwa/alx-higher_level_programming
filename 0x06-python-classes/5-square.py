@@ -70,8 +70,8 @@ class Square:
         i = 0
         j = 0
 
-        while (i <= self._size):
-            while (j <= self._size and self._size > 0):
+        while (i < self._size):
+            while (j < self._size and self._size > 0):
                 print("#", end="")
                 j = j + 1
             #  endwhile
