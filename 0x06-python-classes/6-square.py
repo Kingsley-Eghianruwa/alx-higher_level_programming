@@ -38,9 +38,11 @@ def position_check(position):
     error = [None, None]
     test = [True, True, True]
     test_pos = [None, None, None]
-    test_pos[0] = isinstance(position[0], int) and position[0] >= 0
-    test_pos[1] = isinstance(position[1], int) and position[1] >= 0
-    test_pos[2] = len(position) == 2
+    if (len(position) == 2):
+        test_pos[0] = isinstance(position[0], int) and position[0] >= 0
+        test_pos[1] = isinstance(position[1], int) and position[1] >= 0
+        test_pos[2] = len(position) == 2
+    #  endif
     if (test_pos == test):
         error[0] = 0
     else:
