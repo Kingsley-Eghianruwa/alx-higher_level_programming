@@ -137,10 +137,9 @@ class Square:
         else:
             max_iter = 0
         #  endif
-        if (self._position[1] > 0):
+        if (self._position[1] > 0 and self._size != 0):
             i = 0
             while (i < self._position[1]):
-               #   linePrinter(" ", 1)
                 print("\n", end="")
                 i = i + 1
             #  endwhile
