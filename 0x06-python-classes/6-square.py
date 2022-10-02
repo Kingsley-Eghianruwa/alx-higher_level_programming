@@ -131,7 +131,6 @@ class Square:
 
     def my_print(self):
         """prints in stdout the square with the character #"""
-        i = 0
         max_iter = None
         if (self._size > 0):
             max_iter = self._size - 1
@@ -139,8 +138,14 @@ class Square:
             max_iter = 0
         #  endif
         if (self._position[1] > 0):
+            i = 0
+            while (i < self._position[1] - 1):
+                linePrinter(" ", self._position[1] - 1)
+                i = i + 1
+            #  endwhile
             print("\n", end="")
         #  endif
+        i = 0
         while (i <= max_iter):
             if (max_iter != 0):
                 linePrinter(" ", self._position[0])
