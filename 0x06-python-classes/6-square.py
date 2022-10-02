@@ -36,11 +36,16 @@ def position_check(position):
     error[1]= exception to be raised if error[0] != 0
     """
     error = [None, None]
-    if (position[0] >= 0 and position[1] >= 0 and len(position) == 2):
+    test = [True, True, True]
+    test_pos = [None, None, None]
+    test_pos[0] = isinstance(position[0], int) and position[0] >= 0
+    test_pos[1] = isinstance(position[1], int) and position[1] >= 0
+    test_pos[2] = len(position) == 2
+    if (test_pos == test):
         error[0] = 0
     else:
         error[0] = 1
-        m = "TypeError('position must be a tuple to 2 positive integers')"
+        m = "TypeError('position must be a tuple of 2 positive integers')"
         error[1] = m
     #  endif
     return tuple(error)
