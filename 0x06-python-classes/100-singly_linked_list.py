@@ -141,7 +141,7 @@ class SinglyLinkedList:  # ---
         aNode = self._head
         status = True
         sdl = []  # SinglyLinkedList data list
-        while (status is True):
+        while (status is True and aNode is not None):
             sdl.append("{}".format(aNode._data))
             if (aNode._next_node is not None):
                 aNode = aNode._next_node
