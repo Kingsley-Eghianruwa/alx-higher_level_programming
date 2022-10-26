@@ -53,7 +53,7 @@ class Rectangle():
     def w_check(self,w, f=check_width):
         """ checks and assigns width variable """
         if (f(w)[0] == 0):
-            self._width = f(w)[1]
+            return f(w)[1]
         else:
             raise eval(f(w)[1])
         # endif
@@ -62,7 +62,7 @@ class Rectangle():
     def h_check(self, h, f=check_height):
         """checks and assigns height variable"""
         if (f(h)[0] == 0):
-            self._height = f(h)[1]
+            return f(h)[1]
         else:
             raise eval(f(h)[1])
         # endif
@@ -70,31 +70,31 @@ class Rectangle():
 
     def __init__(self, width=0, height=0):
         """ class constructor """
-        self.w_check(width)
-        self.h_check(height)
+        self._width = self.w_check(width)
+        self._height =  self.h_check(height)
     # enddef: __init__
 
     @property
     def width(self):
         """getter method for width"""
-        return _width
+        return self._width
     # enddef: width
 
     @width.setter
     def width(self, value):
         """setter method for width"""
-        self.w_check(value)
+        self._width = self.w_check(value)
     # enddef: width
 
     @property
     def height(self):
         """getter method for height"""
-        return _height
+        return self._height
     # enddef: height
 
     @height.setter
     def height(self, value):
         """setter method for height"""
-        self.h_check(value)
+        self._height = self.h_check(value)
     # enddef: height
 # endclass:Rectangle
