@@ -2,7 +2,7 @@
 """ this is a module for rectangle objects """
 
 
-def check_width(self, width, checkWidthType=isinstance):
+def check_width(width, checkWidthType=isinstance):
     """this func checks width
 
     1) width must be an integer, otherwise raise a TypeError exception with the message width must be an integer
@@ -24,7 +24,7 @@ def check_width(self, width, checkWidthType=isinstance):
     # endif
 # enddef: check_width
 
-def check_height(self, height, checkHeightType=isinstance):
+def check_height(height, checkHeightType=isinstance):
     """this func checks height
 
     1) height must be an integer, otherwise raise a TypeError exception with the message height must be an integer
