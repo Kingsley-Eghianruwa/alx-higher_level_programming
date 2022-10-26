@@ -83,7 +83,7 @@ class Rectangle():
     @width.setter
     def width(self, value):
         """setter method for width"""
-        w_check(value)
+        self.w_check(value)
     # enddef: width
 
     @property
@@ -95,6 +95,6 @@ class Rectangle():
     @height.setter
     def height(self, value):
         """setter method for height"""
-        h_check(value)
+        self.h_check(value)
     # enddef: height
 # endclass:Rectangle
