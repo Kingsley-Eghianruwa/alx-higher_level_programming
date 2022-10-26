@@ -70,8 +70,8 @@ class Rectangle():
 
     def __init__(self, width=0, height=0):
         """ class constructor """
-        w_check(width)
-        h_check(height)
+        self.w_check(width)
+        self.h_check(height)
     # enddef: __init__
 
     @property
