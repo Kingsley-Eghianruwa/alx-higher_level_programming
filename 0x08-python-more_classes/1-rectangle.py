@@ -59,7 +59,10 @@ def check_height(height, checkHeightType=isinstance):
 class Rectangle():
     """ this creates an empty Rectangle object """
 
-    def w_check(self, w, f=check_width):
+    self.f1 = check_width
+    self.f2 = check_height
+
+    def w_check(self, w, f=f1):
         """ checks and returns width variable """
         if (f(w)[0] == 0):
             return f(w)[1]
@@ -68,7 +71,7 @@ class Rectangle():
         # endif
     # enddef: w_check
 
-    def h_check(self, h, f=check_height):
+    def h_check(self, h, f=f2):
         """checks and returns height variable"""
         if (f(h)[0] == 0):
             return f(h)[1]
