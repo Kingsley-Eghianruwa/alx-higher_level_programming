@@ -5,12 +5,16 @@
 def check_width(width, checkWidthType=isinstance):
     """this func checks width
 
-    1) width must be an integer, otherwise raise a TypeError exception with the message width must be an integer
-    2) if width is less than 0, raise a ValueError exception with the message width must be >= 0
-    
+    1) width must be an integer,
+        otherwise raise a TypeError exception
+        with the message width must be an integer
+    2) if width is less than 0,
+        raise a ValueError exception with the message width must be >= 0
+
     func returns a tuple (error_code, msg/value) where:
     error_code = 0 if 1 & 2 above are met, value is width
-    error_code = 1 if 1 or 2 above is not met, message is "width must be an integer" or "width must be >= 0"
+    error_code = 1 if 1 or 2 above is not met,
+        message is "width must be an integer" or "width must be >= 0"
     """
 
     if (checkWidthType(width, int)) is True:
@@ -24,15 +28,20 @@ def check_width(width, checkWidthType=isinstance):
     # endif
 # enddef: check_width
 
+
 def check_height(height, checkHeightType=isinstance):
     """this func checks height
 
-    1) height must be an integer, otherwise raise a TypeError exception with the message height must be an integer
-    2) if height is less than 0, raise a ValueError exception with the message height must be >= 0
-    
+    1) height must be an integer,
+        otherwise raise a TypeError exception
+        with the message height must be an integer
+    2) if height is less than 0,
+        raise a ValueError exception with the message height must be >= 0
+
     func returns a tuple (error_code, msg/value) where:
     error_code = 0 if 1 & 2 above are met, value is height
-    error_code = 1 if 1 or 2  above is not met, message is "height must be an integer" or  "height must be >= 0"
+    error_code = 1 if 1 or 2  above is not met,
+        message is "height must be an integer" or  "height must be >= 0"
     """
 
     if (checkHeightType(height, int)) is True:
@@ -49,8 +58,8 @@ def check_height(height, checkHeightType=isinstance):
 
 class Rectangle():
     """ this creates an empty Rectangle object """
-    
-    def w_check(self,w, f=check_width):
+
+    def w_check(self, w, f=check_width):
         """ checks and assigns width variable """
         if (f(w)[0] == 0):
             return f(w)[1]
@@ -58,7 +67,7 @@ class Rectangle():
             raise eval(f(w)[1])
         # endif
     # enddef: w_check
-    
+
     def h_check(self, h, f=check_height):
         """checks and assigns height variable"""
         if (f(h)[0] == 0):
@@ -71,7 +80,7 @@ class Rectangle():
     def __init__(self, width=0, height=0):
         """ class constructor """
         self._width = self.w_check(width)
-        self._height =  self.h_check(height)
+        self._height = self.h_check(height)
     # enddef: __init__
 
     @property
