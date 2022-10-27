@@ -86,8 +86,8 @@ class Rectangle():
 
     def __init__(self, width=0, height=0):
         """ class constructor """
-        self._width = w_check(width)
-        self._height = h_check(height)
+        self._width = self.w_check(width)
+        self._height = self.h_check(height)
     # enddef: __init__
 
     @property
@@ -99,7 +99,7 @@ class Rectangle():
     @width.setter
     def width(self, value):
         """setter method for width"""
-        self._width = w_check(value)
+        self._width = self.w_check(value)
     # enddef: width
 
     @property
@@ -111,6 +111,6 @@ class Rectangle():
     @height.setter
     def height(self, value):
         """setter method for height"""
-        self._height = h_check(value)
+        self._height = self.h_check(value)
     # enddef: height
 # endclass:Rectangle
