@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" this is a module for rectangle objects 
+""" this is a module for rectangle objects
 
     it creates a rectangle object with private attributes:
         width and height
@@ -63,8 +63,8 @@ def check_height(height, checkHeightType=isinstance):
 class Rectangle():
     """ this creates an Rectangle object """
 
-    self.f1 = check_width
-    self.f2 = check_height
+    f1 = check_width
+    f2 = check_height
 
     def w_check(self, w, f=f1):
         """ checks and returns width variable """
